@@ -26,7 +26,7 @@ let verificarCampo = () => {
   const espacioOpinion = opinion.value.trim();
 
   if (espacioNombre === "") {
-    alert("Ingrese su nombre maldito estupido");
+    alert("Ingrese su nombre");
     return;
   }
 
