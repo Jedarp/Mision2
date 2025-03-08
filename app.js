@@ -2,16 +2,18 @@ let comentar = document.getElementById("comentar");
 let nombre = document.getElementById("nombre");
 let opinion = document.getElementById("opinion");
 let test = document.getElementById("containerComment");
-let compras = document.querySelectorAll("button");
+let compras = document.getElementsByClassName("btnCompra");
+
 
 // rrecorran la estructura compras
 // a cada elemento le coloca un addEventListener
 
-compras.forEach((elemento) => {
-  elemento.addEventListener("click", function () {
+for(let i=0; i<compras.length; i++) {
+  let item = compras.item(i)
+  item.addEventListener("click", function () {
     alert("Compra realizada con exito!!");
   });
-});
+}
 
 // compras.addEventListener("click", function () {
 //   alert("Compra realizada con exito!!");
