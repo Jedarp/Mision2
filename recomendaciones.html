@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutbolXtreme</title>
+    <link rel="stylesheet" href="./Proyect.css" />
+    <link rel="icon" href="./icon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="personalData" id="start">
+        <img class="profile-pic" src="./logo.png" alt="Imagen de perfil" />
+        <div class="info">
+          <h1>FutbolXtreme</h1>
+          <p>Camisetas de equipos de futbol</p>
+        </div>
+      </div>
+      <div class="navegacion">
+        <ul class="mainmenu2">
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </div>
+    </header>
+    <hr />
+    <section class="formSection">
+      <h2 class="titulos">Calificanos</h2>
+      <form class="formComment" action="">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+        />
+        <label for="opinion">Comentario</label>
+        <textarea
+          name="opinion"
+          id="opinion"
+          rows="5"
+          placeholder="Comentarios"
+        ></textarea>
+
+        <button onclick="verificarCampo()" id="Comentar">Comentar</button>
+      </form>
+
+      <hr />
+
+      <h2 class="titulos">Comentarios</h2>
+
+      <div id="containerComment">
+        <div class="comment" id="test">
+          <h3>Mauricio Peña</h3>
+          <p>
+            "Me llegó rápido, y la tela es genial. El precio es un poco alto,
+            pero vale la pena."
+          </p>
+        </div>
+        <div class="comment" id="test">
+          <h3>Marco Tulio</h3>
+          <p>
+            "Perfecta para los partidos. La talla es exacta y no se deforma al
+            lavar."
+          </p>
+        </div>
+        <div class="comment" id="test">
+          <h3>Benito Camelas</h3>
+          <p>
+            "Material liviano y cómodo. El envío tardó un poco, pero todo bien."
+          </p>
+        </div>
+        <div class="comment" id="test">
+          <h3>Lucía Martínez</h3>
+          <p>
+            "Me llegó rápido, y la tela es genial. El precio es un poco alto,
+            pero vale la pena."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://www.youtube.com/watch?v=K-YKwHR7lW4"
+      target="_blank"
+      class="whatsapp"
+    >
+      <img src="./iconows.png" alt="contacto" class="wh" />
+    </a>
+    <hr />
+    <footer>FutbolXtreme®</footer>
+    <br />
+
+    <script src="app.js"></script>
+  </body>
+</html>
